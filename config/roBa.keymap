@@ -60,7 +60,7 @@
             bindings = <&kp KP_DOT>, <&kp UNDERSCORE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
+            mods = <(MOD_RSFT)>;
         };
     };
 

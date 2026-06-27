@@ -57,7 +57,7 @@
         new_behavior: new_behavior {
             compatible = "zmk,behavior-mod-morph";
             label = "NEW_BEHAVIOR";
-            bindings = <&kp PERIOD>, <&kp UNDERSCORE>;
+            bindings = <&kp PERIOD>, <&kp UNDER>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
@@ -69,10 +69,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &kp I      &kp O          &lt 5 P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp LG(LC(V))                      &new_macro1    &kp H        &kp J  &kp K      &kp L          &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp TAB                            &lt 6 TAB      &kp N        &kp M  &kp COMMA  &new_behavior  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 INT_HENKAN  &lt 7 SPACE  &lt_to_layer_0 7 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                                   &kp DEL
+&kp Q             &kp W         &kp E         &kp R                        &kp T                                                            &kp Y        &kp U  &kp I      &kp O          &lt 5 P
+&kp A             &kp S         &kp D         &kp F                        &kp G        &kp LG(LC(V))                      &lt 6 SEMICOLON  &kp H        &kp J  &kp K      &kp L          &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp TAB                            &lt 6 TAB        &kp N        &kp M  &kp COMMA  &new_behavior  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 INT_HENKAN  &lt 7 SPACE  &lt_to_layer_0 7 INT_MUHENKAN      &kp BACKSPACE    &lt 1 ENTER                                   &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -80,7 +80,7 @@
 
         Layer1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &kp LG(LS(LEFT))  &kp LEFT_ALT    &kp TAB
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &kp LG(LS(LEFT))  &kp TAB         &kp LEFT_ALT
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LA(LEFT)      &kp UP_ARROW    &kp LA(RIGHT_ARROW)
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                            &trans

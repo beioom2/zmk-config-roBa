@@ -80,8 +80,8 @@
 
         new_behavior: new_behavior {
             compatible = "zmk,behavior-mod-morph";
-            label = "。";
-            bindings = <&kp PERIOD>, <&kp A>;
+            label = "._";
+            bindings = <&kp PERIOD>, <&kp JP_UNDERSCORE>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;

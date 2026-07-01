@@ -93,10 +93,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                            &kp Y        &kp U  &kp I      &kp O                  &lt 5 P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp LG(LC(V))                      &kp JP_LBRACKET  &kp H        &kp J  &kp K      &kp L                  &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp TAB                            &kp JP_RBRACKET  &kp N        &kp M  &kp COMMA  &PERIOD_JP_UNDERSCORE  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 INT_HENKAN  &lt 7 SPACE  &lt_to_layer_0 7 INT_MUHENKAN      &kp BACKSPACE    &lt 1 ENTER                                           &kp DEL
+&kp Q           &kp L         &kp U         &trans                       &trans                                                           &kp F        &kp W  &kp R  &kp Y  &lt 5 P
+&kp TAB         &kp E         &kp I         &kp A                        &kp O        &kp MINUS                          &kp JP_LBRACKET  &kp K        &kp T  &kp N  &kp S  &kp H
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C                        &kp V        &trans                             &kp JP_RBRACKET  &kp G        &kp D  &kp M  &kp J  &kp B
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 INT_HENKAN  &lt 7 SPACE  &lt_to_layer_0 7 INT_MUHENKAN      &kp BACKSPACE    &lt 1 ENTER                       &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -174,6 +174,17 @@
 &kp NUMBER_6     &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans      &trans  &none             &kp JP_ASTERISK  &kp JP_BACKQUOTE  &kp JP_UNDERSCORE  &kp SEMICOLON
 &trans           &trans         &trans        &trans        &trans        &trans      &trans  &trans                                                                  &trans
             >;
+        };
+
+        layer_9 {
+            bindings = <
+&kp Q             &kp W         &kp E         &kp R                        &kp T                                                            &kp Y        &kp U  &kp I      &kp O                  &lt 5 P
+&kp A             &kp S         &kp D         &kp F                        &kp G        &kp LG(LC(V))                      &kp JP_LBRACKET  &kp H        &kp J  &kp K      &kp L                  &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp TAB                            &kp JP_RBRACKET  &kp N        &kp M  &kp COMMA  &PERIOD_JP_UNDERSCORE  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 INT_HENKAN  &lt 7 SPACE  &lt_to_layer_0 7 INT_MUHENKAN      &kp BACKSPACE    &lt 1 ENTER                                           &kp DEL
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 };

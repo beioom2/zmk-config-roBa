@@ -186,5 +186,23 @@
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
+
+        layer_10 {
+            bindings = <
+&kp A        &kp I          &kp U     &kp E   &kp Y                                  &kp LS(DQT)  &kp K  &kp T  &kp S  &kp D
+&kp MINUS    &kp LS(QMARK)  &kp Q     &kp F   &kp J       &kp TAB         &kp TAB    &kp TAB      &kp R  &kp M  &kp G  &kp H
+&kp Z        &kp X          &kp C     &kp V   &kp LS(LT)  &kp LS(GT)      &kp LS(M)  &kp LS(LT)   &kp P  &kp B  &kp W  &kp L
+&kp LS(TAB)  &kp BSPC       &kp BSPC  &trans  &trans      &lt 7 O         &trans     &kp N                             &trans
+            >;
+        };
+
+        layer_11 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
     };
 };

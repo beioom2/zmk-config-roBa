@@ -91,12 +91,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        layer_10 {
             bindings = <
-&kp Q           &kp L         &kp U         &trans                       &trans                                                           &kp F        &kp W  &kp R  &kp Y  &lt 5 P
-&kp TAB         &kp E         &kp I         &kp A                        &kp O        &kp MINUS                          &kp JP_LBRACKET  &kp K        &kp T  &kp N  &kp S  &kp H
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C                        &kp V        &trans                             &kp JP_RBRACKET  &kp G        &kp D  &kp M  &kp J  &kp B
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 INT_HENKAN  &lt 7 SPACE  &lt_to_layer_0 7 INT_MUHENKAN      &kp BACKSPACE    &lt 1 ENTER                       &kp DEL
+&kp A        &kp I          &kp U     &kp E   &kp Y                                        &kp LS(DQT)  &kp K  &kp T  &kp S  &kp D
+&kp MINUS    &kp LS(QMARK)  &kp Q     &kp F   &kp J       &kp TAB         &kp TAB          &kp SLASH    &kp R  &kp M  &kp G  &kp H
+&kp Z        &kp X          &kp C     &kp V   &kp LS(LT)  &kp LS(GT)      &kp LS(M)        &kp LS(LT)   &kp P  &kp B  &kp W  &kp L
+&kp LS(TAB)  &kp BSPC       &kp BSPC  &trans  &trans      &lt 7 O         &lt 0 BACKSPACE  &kp N                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -185,15 +185,6 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
-        };
-
-        layer_10 {
-            bindings = <
-&kp A        &kp I          &kp U     &kp E   &kp Y                                  &kp LS(DQT)  &kp K  &kp T  &kp S  &kp D
-&kp MINUS    &kp LS(QMARK)  &kp Q     &kp F   &kp J       &kp TAB         &kp TAB    &kp SLASH    &kp R  &kp M  &kp G  &kp H
-&kp Z        &kp X          &kp C     &kp V   &kp LS(LT)  &kp LS(GT)      &kp LS(M)  &kp LS(LT)   &kp P  &kp B  &kp W  &kp L
-&kp LS(TAB)  &kp BSPC       &kp BSPC  &trans  &trans      &lt 7 O         &trans     &kp N                             &trans
-            >;
         };
 
         layer_11 {
